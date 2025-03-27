@@ -8,7 +8,7 @@ resource "aws_lb_target_group" "micrservice" {
   health_check {
     protocol            = "HTTP"
     port                = 3000             # Health check should match the target port
-    path                = "/hello"
+    path                = "/"
     interval            = 30
     timeout             = 5
     healthy_threshold   = 3
